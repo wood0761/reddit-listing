@@ -15,7 +15,7 @@ class Comments extends Component {
         Reddit.getComments(this.state.id)
         .then( res => {
             this.setState({ children: res.data[1].data.children })
-    });
+        });
     }
     
     render() { 
